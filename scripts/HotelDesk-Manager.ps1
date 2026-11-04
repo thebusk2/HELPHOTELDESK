@@ -28,12 +28,18 @@ function Get-LocalIP {
 
 # --- Creación de Ventana Principal ---
 $mainForm = New-Object System.Windows.Forms.Form
-$mainForm.Text = "Panel de Gestión & Personalización - HotelDesk IT"
+$mainForm.Text = "HELPHOTELDESK - Panel de Gestión y Control"
 $mainForm.Size = New-Object System.Drawing.Size(650, 620)
 $mainForm.StartPosition = "CenterScreen"
 $mainForm.FormBorderStyle = "FixedDialog"
 $mainForm.MaximizeBox = $false
 $mainForm.BackColor = [System.Drawing.Color]::FromArgb(245, 247, 250)
+
+# Cargar icono si existe
+$icoPath = "$PSScriptRoot\..\assets\app.ico"
+if (Test-Path $icoPath) {
+    try { $mainForm.Icon = New-Object System.Drawing.Icon($icoPath) } catch {}
+}
 
 # Encabezado
 $headerPanel = New-Object System.Windows.Forms.Panel
@@ -42,7 +48,7 @@ $headerPanel.BackColor = [System.Drawing.Color]::FromArgb(24, 43, 73)
 $mainForm.Controls.Add($headerPanel)
 
 $lblTitle = New-Object System.Windows.Forms.Label
-$lblTitle.Text = "🏨 HOTELDESK CONTROL CENTER"
+$lblTitle.Text = "🏨 HELPHOTELDESK CONTROL CENTER"
 $lblTitle.Font = New-Object System.Drawing.Font("Segoe UI", 14, [System.Drawing.FontStyle]::Bold)
 $lblTitle.ForeColor = [System.Drawing.Color]::White
 $lblTitle.Location = New-Object System.Drawing.Point(20, 15)

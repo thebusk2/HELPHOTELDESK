@@ -1,8 +1,8 @@
 @echo off
-title HotelDesk Suite - Compilador de Instalador EXE
+title HELPHOTELDESK - Compilador de Instalador EXE
 color 0b
 echo ==========================================================
-echo    COMPILANDO HOTELDESKSETUP.EXE EN WINDOWS
+echo    COMPILANDO HELPHOTELDESK.EXE CON ICONO NATIVO
 echo ==========================================================
 echo.
 
@@ -19,16 +19,21 @@ if not exist "%CSC%" (
 )
 
 echo Usando compilador: %CSC%
-echo Compilando codigo C# a HotelDeskSetup.exe...
+echo Compilando codigo C# a HELPHOTELDESK.exe...
 echo.
 
-"%CSC%" /target:winexe /platform:anycpu /out:"%~dp0..\HotelDeskSetup.exe" "%~dp0HotelDeskSetup.cs" /reference:System.Windows.Forms.dll,System.Drawing.dll,System.IO.Compression.dll,System.IO.Compression.FileSystem.dll
+set ICON_PARAM=
+if exist "%~dp0..\assets\app.ico" (
+    set ICON_PARAM=/win32icon:"%~dp0..\assets\app.ico"
+)
 
-if exist "%~dp0..\HotelDeskSetup.exe" (
+"%CSC%" /target:winexe /platform:anycpu %ICON_PARAM% /out:"%~dp0..\HELPHOTELDESK.exe" "%~dp0HotelDeskSetup.cs" /reference:System.Windows.Forms.dll,System.Drawing.dll,System.IO.Compression.dll,System.IO.Compression.FileSystem.dll
+
+if exist "%~dp0..\HELPHOTELDESK.exe" (
     echo.
     echo ==========================================================
-    echo  [EXITO] El archivo HotelDeskSetup.exe ha sido creado!
-    echo  Ubicacion: %~dp0..\HotelDeskSetup.exe
+    echo  [EXITO] El archivo HELPHOTELDESK.exe ha sido creado!
+    echo  Ubicacion: %~dp0..\HELPHOTELDESK.exe
     echo ==========================================================
     echo.
 ) else (

@@ -36,12 +36,22 @@ namespace HotelDeskInstaller
 
         private void InitializeComponent()
         {
-            this.Text = "HotelDesk Suite - Instalador & Configuración Todo en Uno";
+            this.Text = "HELPHOTELDESK - Sistema de Mesa de Ayuda Hotelera";
             this.Size = new Size(680, 580);
             this.StartPosition = FormStartPosition.CenterScreen;
             this.FormBorderStyle = FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.BackColor = Color.FromArgb(245, 247, 250);
+
+            try
+            {
+                string iconFile = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "assets", "app.ico");
+                if (File.Exists(iconFile))
+                {
+                    this.Icon = new Icon(iconFile);
+                }
+            }
+            catch { }
 
             // Header
             headerPanel = new Panel();
@@ -50,7 +60,7 @@ namespace HotelDeskInstaller
             this.Controls.Add(headerPanel);
 
             Label lblTitle = new Label();
-            lblTitle.Text = "🏨 HOTELDESK SUITE - INSTALADOR INTEGRAL";
+            lblTitle.Text = "🏨 HELPHOTELDESK - INSTALADOR INTEGRAL";
             lblTitle.Font = new Font("Segoe UI", 13, FontStyle.Bold);
             lblTitle.ForeColor = Color.White;
             lblTitle.Location = new Point(20, 15);

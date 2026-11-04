@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#14213d"/>
+      <stop offset="100%" stop-color="#0b1329"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fca311"/>
+      <stop offset="100%" stop-color="#e5a00d"/>
+    </linearGradient>
+  </defs>
+  <!-- Background Card -->
+  <rect x="4" y="4" width="120" height="120" rx="24" fill="url(#bgGrad)" stroke="url(#goldGrad)" stroke-width="4"/>
+  <!-- Hotel Building Outline -->
+  <rect x="28" y="32" width="72" height="74" rx="4" fill="#1f2f54" stroke="#ffffff" stroke-width="2.5"/>
+  <!-- Hotel Roof Crown -->
+  <polygon points="64,18 24,34 104,34" fill="url(#goldGrad)"/>
+  <!-- Windows -->
+  <rect x="36" y="40" width="12" height="12" rx="2" fill="#fca311"/>
+  <rect x="80" y="40" width="12" height="12" rx="2" fill="#fca311"/>
+  <rect x="36" y="60" width="12" height="12" rx="2" fill="#fca311"/>
+  <rect x="80" y="60" width="12" height="12" rx="2" fill="#fca311"/>
+  <!-- Helpdesk Cross / Support Shield in Center -->
+  <circle cx="64" cy="74" r="22" fill="#00b4d8" stroke="#ffffff" stroke-width="2"/>
+  <!-- Headset / Support Icon -->
+  <path d="M52,74 A12,12 0 0,1 76,74" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+  <rect x="50" y="72" width="4" height="8" rx="2" fill="#ffffff"/>
+  <rect x="74" y="72" width="4" height="8" rx="2" fill="#ffffff"/>
+  <path d="M74,78 L68,82" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="67" cy="82" r="2" fill="#fca311"/>
+</svg>
