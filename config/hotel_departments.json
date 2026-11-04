@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Recepción / Front Desk",
+    "description": "Estaciones de trabajo de check-in/out, lectores de pasaportes/documentos, impresoras de folios y tarjetas magnéticas de habitación.",
+    "priority": "Alta"
+  },
+  {
+    "name": "Puntos de Venta (POS) / Restaurante & Bar",
+    "description": "Terminales de cobro, impresoras térmicas de cocina y comandas, datáfonos/POS.",
+    "priority": "Muy Alta"
+  },
+  {
+    "name": "Sistema PMS & Reservas",
+    "description": "Servidor y clientes del software hotelero (Opera, protel, Sihot, etc.).",
+    "priority": "Urgente"
+  },
+  {
+    "name": "Wi-Fi y Red de Huéspedes",
+    "description": "Puntos de acceso en pasillos, lobby, portal cautivo de huéspedes.",
+    "priority": "Media"
+  },
+  {
+    "name": "Cerraduras Electrónicas & Control de Acceso",
+    "description": "Codificadores de llaves, cerraduras RFID de puertas de habitaciones y áreas comunes.",
+    "priority": "Alta"
+  },
+  {
+    "name": "Administración, Contabilidad y RRHH",
+    "description": "Equipos de oficina, impresoras compartidas, correo institucional.",
+    "priority": "Normal"
+  },
+  {
+    "name": "Mantenimiento & Telefonía PBX",
+    "description": "Conmutador telefónico, teléfonos de habitaciones, sistemas de CCTV.",
+    "priority": "Media"
+  }
+]

@@ -1,0 +1,14 @@
+# .gitignore para HotelDesk
+*.tmp
+*.log
+*.sql
+*.vhdx
+*.vhd
+*.iso
+bin/
+obj/
+.vscode/
+.idea/
+Thumbs.db
+Desktop.ini
+.DS_Store
