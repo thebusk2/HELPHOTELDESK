@@ -260,11 +260,15 @@ $grpActions.Controls.Add($btnAgents)
 
 # Pie de página
 $lblFooter = New-Object System.Windows.Forms.Label
-$lblFooter.Text = "HotelDesk Suite v1.0 • Optimizado para Windows 10 & Hyper-V"
-$lblFooter.Font = New-Object System.Drawing.Font("Segoe UI", 8, [System.Drawing.FontStyle]::Italic)
-$lblFooter.ForeColor = [System.Drawing.Color]::Gray
-$lblFooter.Location = New-Object System.Drawing.Point(165, 535)
+$lblFooter.Text = "HELPHOTELDESK Suite • Creado por Andy Robles (@thebusk2)"
+$lblFooter.Font = New-Object System.Drawing.Font("Segoe UI", 8.5, [System.Drawing.FontStyle]::Bold)
+$lblFooter.ForeColor = [System.Drawing.Color]::FromArgb(41, 128, 185)
+$lblFooter.Location = New-Object System.Drawing.Point(145, 528)
 $lblFooter.AutoSize = $true
+$lblFooter.Cursor = [System.Windows.Forms.Cursors]::Hand
+$lblFooter.Add_Click({
+    Start-Process "https://github.com/thebusk2/HELPHOTELDESK"
+})
 $mainForm.Controls.Add($lblFooter)
 
 # Mostrar Ventana

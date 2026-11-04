@@ -164,7 +164,22 @@ namespace HotelDeskInstaller
             btnOpenWeb.Size = new Size(230, 45);
             btnOpenWeb.Enabled = false;
             btnOpenWeb.Click += (s, e) => Process.Start("http://localhost/glpi");
-            this.Controls.Add(btnOpenWeb);
+            // Pie de página con créditos del autor
+            Label lblFooter = new Label();
+            lblFooter.Text = "HELPHOTELDESK Suite • Creado por Andy Robles (@thebusk2)";
+            lblFooter.Font = new Font("Segoe UI", 8.2f, FontStyle.Italic);
+            lblFooter.ForeColor = Color.FromArgb(120, 130, 145);
+            lblFooter.Location = new Point(20, 526);
+            lblFooter.AutoSize = true;
+            this.Controls.Add(lblFooter);
+
+            LinkLabel lnkGitHub = new LinkLabel();
+            lnkGitHub.Text = "github.com/thebusk2/HELPHOTELDESK";
+            lnkGitHub.Font = new Font("Segoe UI", 8.2f);
+            lnkGitHub.Location = new Point(415, 526);
+            lnkGitHub.AutoSize = true;
+            lnkGitHub.LinkClicked += (s, e) => Process.Start("https://github.com/thebusk2/HELPHOTELDESK");
+            this.Controls.Add(lnkGitHub);
         }
 
         private void Log(string message)

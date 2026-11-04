@@ -105,5 +105,18 @@ Permite monitorear Apache/MySQL, cambiar la identidad del hotel y hacer copias d
 
 ---
 
+## 👨‍💻 Autor & Créditos
+
+Este proyecto es desarrollado y mantenido por:
+
+### **Andy Robles** (`@thebusk2`)
+- 🐙 **GitHub:** [@thebusk2](https://github.com/thebusk2)
+- 💼 **LinkedIn:** [Perfil de Andy Robles](https://linkedin.com/in/thebusk2)
+- 🐦 **Twitter / X:** [@thebusk2](https://twitter.com/thebusk2)
+- 🌐 **Contacto:** A través de [GitHub Issues](https://github.com/thebusk2/HELPHOTELDESK/issues)
+
+---
+
 ## 📄 Licencia
-Este proyecto recopila y automatiza herramientas de código abierto bajo licencia **GPL v3** y scripts de utilidad pública para administración de sistemas en entornos hoteleros.
+Este proyecto es de código abierto bajo licencia **GPL v3**. Puedes usarlo, distribuirlo y modificarlo libremente para el departamento de TI de tu hotel.
+
