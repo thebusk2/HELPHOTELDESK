@@ -6,7 +6,17 @@
   <b>Sistema de Mesa de Ayuda (Ticketing), Inventario de Activos (ITAM) y Generación de Reportes para el Departamento de TI en Hotelería</b>
   <br>
   <i>Optimizado para Servidor Local sobre Windows 10 en Hyper-V</i>
+  <br><br>
+  <a href="https://github.com/thebusk2/HELPHOTELDESK/releases/tag/v1.0.0"><img src="https://img.shields.io/badge/version-v1.0.0-blue.svg" alt="Versión"></a>
+  <img src="https://img.shields.io/badge/platform-Windows%2010%20%7C%20Hyper--V-0078D6.svg?logo=windows" alt="Plataforma">
+  <img src="https://img.shields.io/badge/license-GPLv3-green.svg" alt="Licencia">
+  <img src="https://img.shields.io/badge/engine-GLPI%20v10-orange.svg" alt="Motor">
 </p>
+
+---
+
+### 🏷️ Topics / Etiquetas
+`helpdesk` • `service-desk` • `hotel-management` • `hotel-it` • `glpi` • `windows10` • `hyper-v` • `itam` • `cmdb` • `ticketing-system` • `powershell` • `csharp`
 
 ---
 
